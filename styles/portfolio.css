@@ -48,3 +48,58 @@ p {
   font-size: 18px;
   color: white;
 }
+.btn-branding-outline {
+  background-color: white;
+  border-color: var(--branding-color);
+  border-radius: 4px;
+  padding: 18px 30px;
+  line-height: 27px;
+  font-size: 18px;
+  color: var(--branding-color);
+}
+.project-description p {
+  opacity: 70%;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  /* text-align: justify; */
+  padding: 2rem 0rem;
+}
+.project-description h2 {
+  font-size: 48px;
+  line-height: 85px;
+}
+.project-description {
+  padding: 90px 30px;
+}
+
+@media (max-width: 990px) {
+  h1 {
+    font-size: 76px;
+  }
+  .project-description h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .weather-description {
+    order: 2;
+  }
+  .project-description {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .project-description p {
+    text-align: justify;
+  }
+  .btn-mobile {
+    border-radius: 70px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+}
+@media (min-width: 990px) and (max-width: 1200px) {
+  .project-description {
+    padding: 0px 10px;
+  }
+}
