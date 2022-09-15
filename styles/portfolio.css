@@ -87,6 +87,26 @@ p {
 .project-description {
   padding: 90px 30px;
 }
+.about-content h1 {
+  font-size: 64px;
+  line-height: 85px;
+}
+.about-content h2 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+}
+.about-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  opacity: 70% !important;
+}
+.about-section {
+  padding: 160px 20px;
+}
+.about-content {
+  padding: 40px;
+}
 
 @media (max-width: 990px) {
   h1 {
@@ -111,6 +131,10 @@ p {
     width: 100%;
     text-align: center;
     display: inline-block;
+  }
+  .about-section {
+    padding: 0px;
+    text-align: center;
   }
 }
 @media (min-width: 990px) and (max-width: 1200px) {
