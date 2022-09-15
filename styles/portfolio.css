@@ -1,8 +1,8 @@
 :root {
-  --branding-color: #6c63ff;
+  --branding-color: #582a6a;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --secondary-color: #f9f7fe;
+  --secondary-color: #f1f4f3;
 }
 
 h1,
@@ -41,6 +41,7 @@ p {
   color: #272142;
 }
 .btn-branding {
+  transition: all 200ms ease-in-out;
   background: var(--branding-color);
   border-radius: 4px;
   padding: 18px 30px;
@@ -48,7 +49,15 @@ p {
   font-size: 18px;
   color: white;
 }
+.btn-branding:hover {
+  cursor: pointer;
+  color: var(--branding-color) !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--branding-color) !important;
+}
+
 .btn-branding-outline {
+  transition: all 200ms ease-in-out;
   background-color: white;
   border-color: var(--branding-color);
   border-radius: 4px;
@@ -56,6 +65,12 @@ p {
   line-height: 27px;
   font-size: 18px;
   color: var(--branding-color);
+}
+.btn-branding-outline:hover {
+  cursor: pointer;
+  color: var(--secondary-color) !important;
+  background-color: var(--branding-color) !important;
+  opacity: 0.8;
 }
 .project-description p {
   opacity: 70%;
