@@ -107,8 +107,9 @@ p {
   opacity: 70% !important;
 }
 .content-container {
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
+
 .content {
   padding: 40px;
 }
@@ -120,6 +121,29 @@ p {
 }
 .fa-at {
   color: #d83e31;
+}
+a.nav-link.active {
+  position: relative;
+}
+a.nav-link.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 5%;
+  width: 90%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(88, 42, 106, 0.3),
+    rgba(88, 42, 106, 0.75),
+    rgba(88, 42, 106, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+}
+.navbar {
+  background-color: var(--secondary-color);
 }
 
 @media (max-width: 990px) {
