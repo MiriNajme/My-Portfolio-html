@@ -107,7 +107,7 @@ p {
   opacity: 70% !important;
 }
 .content-container {
-  padding: 80px 20px;
+  padding: 80px 20px 0px 20px;
 }
 
 .content {
@@ -116,7 +116,7 @@ p {
 .contact-content {
   padding: 100px 0px 0px 0px;
 }
-.fa-linkedin {
+.linkedin {
   color: #183153;
 }
 .fa-at {
@@ -149,6 +149,20 @@ a.nav-link.active::after {
   margin-left: 15px;
 }
 
+.social-links a {
+  margin: 0px 15px;
+  color: var(--branding-color);
+  font-size: 20px;
+  line-height: 21px;
+  background-color: var(--secondary-color);
+  padding: 15px 20px;
+  border-radius: 45px;
+  transition: all 150ms ease-in-out;
+}
+.social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
 @media (max-width: 990px) {
   h1 {
     font-size: 76px;
