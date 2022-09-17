@@ -112,6 +112,15 @@ p {
 .content {
   padding: 40px;
 }
+.contact-content {
+  padding: 0px;
+}
+.fa-linkedin {
+  color: #183153;
+}
+.fa-at {
+  color: #d83e31;
+}
 
 @media (max-width: 990px) {
   h1 {
@@ -141,13 +150,17 @@ p {
     padding: 0px;
     text-align: center;
   }
+  .contact-content {
+    padding-top: 30px;
+  }
   .work-content p {
     margin-bottom: 30px !important;
   }
   .work-content div.row {
     margin-top: 0px !important;
   }
-  .work-content h1 {
+  .work-content h1,
+  .contact-content h1 {
     font-size: 46px;
   }
 }
